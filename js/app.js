@@ -64,7 +64,7 @@ for (let i = 0; i < n; i++) {
         console.log('fizzbuzz')
         divElement.innerHTML += `
         <div class="bg-primary text-white text-center cube">
-           <div class=" mb-2 g-2"><p>fizzbuzz</p></div>
+           <p class="fs-4 m-0">fizzbuzz</p>
         </div>`
     }
     // se il numero è uguale a un multiplo di 5 stampo buzz
@@ -72,7 +72,7 @@ for (let i = 0; i < n; i++) {
         console.log('buzz')
         divElement.innerHTML += `
         <div class="bg-danger text-center cube">
-            <div class="mb-2 g-2"><p>buzz</p></div>
+            <p class="fs-4 m-0">buzz</p>
         </div>`
     }
     //se invece  il numero è un multiplo di 3 stampo fizz
@@ -80,7 +80,7 @@ for (let i = 0; i < n; i++) {
         console.log('fizz')
         divElement.innerHTML += `
         <div class="bg-warning text-center cube">
-            <div class=" mb-2 g-2"><p>fizz</p></div>
+            <p class="fs-4 m-0">fizz</p>
         </div>`
     }
     //altrimenti il numero non è ne multiplo di 3 ne di 5 stampo numero
@@ -88,7 +88,7 @@ for (let i = 0; i < n; i++) {
         console.log(num);
         divElement.innerHTML += `
         <div class=" bg-success text-center cube">
-            <div class=" mb-2 g-2"><p>${num}</p></div>
+            <p class="fs-4 m-0">${num}</p>
         </div>`
     }
 
