@@ -1,0 +1,13 @@
+.cube {
+    width: 9%;
+    aspect-ratio: 1/1;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+.container {
+
+}
