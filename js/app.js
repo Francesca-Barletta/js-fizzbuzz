@@ -18,6 +18,8 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
 inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna. */
 
+//////////////////////////////////////////////////
+//pseudocodice
 
 //per i multipli di 3 stampare in console "fizz" al posto del numero
   //con operatore modulo determinare se un numero è multiplo di 3 quindi il numero deve essere divisibile per 3 con resto 0
@@ -54,22 +56,41 @@ for(let i = 0; i < n; i++){
      //quindi il numero deve essere divisibile per 5 con resto 0  
    
     
-    
+    const divElement = document.querySelector('.row');
+
 // se il numero è uguale a un multiplo di 3 e uguale a un multiplo di 5 stampo fizzbuzz
  if (multiploCinque === 0 &&
      multiploTre === 0){
         console.log('fizzbuzz')
+        divElement.innerHTML +=`
+        <div class="col-2 bg-primary text-white">
+           <div class="p-2 mb-2 g-2"><p>fizzbuzz</p></div>
+        </div>`
     }
     // se il numero è uguale a un multiplo di 5 stampo buzz
  else if(multiploCinque === 0){
         console.log('buzz')
+        divElement.innerHTML +=`
+        <div class="col-2 bg-danger">
+            <div class="p-2 mb-2 g-2"><p>buzz</p></div>
+        </div>`
  }
     //se invece  il numero è un multiplo di 3 stampo fizz
   else if(multiploTre === 0){
         console.log('fizz')
+        divElement.innerHTML +=`
+        <div class="col-2 bg-warning">
+            <div class="p-2 mb-2 g-2"><p>fizz</p></div>
+        </div>`
   }
     //altrimenti il numero non è ne multiplo di 3 ne di 5 stampo numero
   else{
     console.log(num)
+    divElement.innerHTML +=`
+    <div class="col-2 bg-success">
+        <div class="p-2 mb-2 g-2>${num}</div>
+    </div>`
   }
+  
+ 
 }
